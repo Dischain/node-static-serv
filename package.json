@@ -1,0 +1,24 @@
+{
+  "name": "node-static-serv",
+  "version": "1.0.0",
+  "description": "node.js static server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dischain/node-static-serv.git"
+  },
+  "keywords": [
+    "static",
+    "server",
+    "node.js"
+  ],
+  "author": "dischain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dischain/node-static-serv/issues"
+  },
+  "homepage": "https://github.com/Dischain/node-static-serv#readme"
+}
