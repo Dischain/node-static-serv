@@ -4,7 +4,7 @@
   "description": "node.js static server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec ./test --recursive"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Dischain/node-static-serv/issues"
   },
-  "homepage": "https://github.com/Dischain/node-static-serv#readme"
+  "homepage": "https://github.com/Dischain/node-static-serv#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
