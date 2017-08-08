@@ -36,12 +36,12 @@ http.createServer(function (req, res) {
 }).listen(3000, function() { console.log('server is now  running on port 3000'); });
 
 /*******************************************************/
-// -> static server
 
 // options passed to constructorL
 // cache - max cache life time
 // host, port, root, defaults for index.html,
 // x-powered-by (Boolean)
+// gzip
 
 // available methods - get and head.
 
@@ -60,6 +60,13 @@ http.createServer(function (req, res) {
 
 Server.prototype.run = function start() {
   this._server = http.createServer(handler).listem(opts.port);  
+}
+
+StaticServer.prototype.stop = function stop() {
+  if (this._socket) {
+    this._socket.close();
+    this._socket = null;
+  }
 }
 
 function handler(req, res) {
