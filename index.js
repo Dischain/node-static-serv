@@ -7,7 +7,8 @@ const http = require('http')
 
 let publicDir = './public';
 //publicDir = path.normalize(path.resolve(root || '.'));
-const publicDirPath = path.resolve(publicDir);
+// for testing:
+const publicDirPath = path.normalize(path.resolve(publicDir));;
 
 http.createServer(function (req, res) {
   const reqPath = url.parse(req.url).pathname;
