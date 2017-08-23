@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha --reporter spec ./test --recursive"
   },
+  "bin": {
+    "nss": "./bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dischain/node-static-serv.git"

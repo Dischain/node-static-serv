@@ -6,7 +6,13 @@ const fs = require('fs');
 
 const Server = require('../lib/server.js');
 
-function createServer(opts) { new Server(opts).start(); }
+function createServer(opts) { 
+  new Server(opts).start(() => {
+    if (Object.keys(opts).length === 0) {
+      console.log('Server started on default port at this folder');
+    }
+  }); 
+}
 
 // @returns false if no errors, true if contains errors
 function checkErrors(args, output) {
